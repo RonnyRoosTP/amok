@@ -19,3 +19,10 @@ Feature: Validating the existing out of the box funcionality of amock
 		Given I set x-mock-filename header to html
 		When I POST to /
 		Then response code should be 200
+
+	Scenario: I should get successful payment object created response
+		Given I set x-mock-response-code header to 201
+		When I POST to /json
+		Then response code should be 201
+		And response body should be valid json
+		And response body path $.string should be Hello World

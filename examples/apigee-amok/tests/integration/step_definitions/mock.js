@@ -4,9 +4,10 @@
 var apickli = require('apickli');
 
 // set the url and base path for your API endpoint on Apigee edge
-var url = 'importantorganization-test.apigee.net/mock-api';
+var url = 'ronnyroos-trial.apigee.net/amok-api';
 
-var env = process.env.NODE_ENV || 'dev';
+var env = process.env.NODE_ENV || 'test';
+
 // debug
 console.log('running on ' + env + ' environment');
 

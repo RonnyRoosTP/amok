@@ -256,9 +256,9 @@
 									${apigee.env}
 								</NODE_ENV>
 							</environmentVariables>
-							<executable>tests/node_modules/cucumber/bin/cucumber.js</executable>
+							<executable>node</executable>
 							<commandlineArgs>
-								tests/integration
+								tests/node_modules/cucumber/bin/cucumber.js tests/integration
 							</commandlineArgs>
 						</configuration>
 					</execution>
